@@ -1,1 +1,25 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 
+android {
+    namespace 'com.example.flightscry'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.flightscry"
+        minSdk 33
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation "net.skyscanner.backpack:backpack-android:43.0.0"
+}
